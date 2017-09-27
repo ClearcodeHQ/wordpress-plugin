@@ -1,0 +1,30 @@
+{
+  "name": "clearcode/wordpress-plugin",
+  "type": "project",
+  "license": "GPL-3.0+",
+  "description": "WordPress Plugin boilerplate by Clearcode.",
+  "homepage": "https://clearcode.cc",
+  "authors": [
+    {
+      "name": "Clearcode",
+      "homepage": "https://github.com/ClearcodeHQ"
+    },
+    {
+      "name": "Piotr Niewiadomski",
+      "homepage": "https://github.com/PiotrPress"
+    }
+  ],
+  "keywords": [
+    "wordpress", "wp", "plugin", "boilerplate", "blog", "cms", "composer"
+  ],
+  "support": {
+    "issues": "https://github.com/ClearcodeHQ/wordpress-plugin/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "require": {
+    "php": ">=7.0",
+    "clearcode/wordpress-framework": "*"
+  }
+}
