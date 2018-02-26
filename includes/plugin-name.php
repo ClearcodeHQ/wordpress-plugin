@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Copyright (C) 2017 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2018 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
@@ -23,7 +23,7 @@
 
 namespace Vendor;
 
-use Clearcode\Framework\v1\Plugin;
+use Clearcode\Framework\v3\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 if ( ! class_exists( __NAMESPACE__ . '\Plugin_Name' ) ) {

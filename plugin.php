@@ -20,7 +20,7 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
-   Copyright (C) 2017 by Your Name or Company Name <https://example.com>
+   Copyright (C) 2018 by Your Name or Company Name <https://example.com>
    and associates (see AUTHORS.txt file).
 
    This file is part of Plugin Name.
@@ -41,32 +41,23 @@
  */
 
 namespace Vendor\Plugin_Name;
-
 use Vendor\Plugin_Name;
+
+use Clearcode\Framework\v3\Autoloader;
 use Exception;
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
-if ( ! function_exists( 'get_plugin_data' ) ) {
-	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-}
-
-require __DIR__ . '/vendor/autoload.php';
-
-foreach ( array( 'plugin-name', 'functions' ) as $file ) {
-	require_once( __DIR__ . "/includes/$file.php" );
-}
+defined( 'ABSPATH' ) or exit;
 
 try {
-	spl_autoload_register( __NAMESPACE__ . '::autoload' );
+	require __DIR__ . '/vendor/autoload.php';
+	new Autoloader( [ __NAMESPACE__ => __DIR__ . '/includes' ] );
 
-	if ( ! has_action( __NAMESPACE__ ) ) {
-		do_action( __NAMESPACE__, Plugin_Name::instance( __FILE__ ) );
-	}
+	foreach ( [ 'plugin-name', 'functions' ] as $file )
+		require_once( __DIR__ . "/includes/$file.php" );
+
+	Plugin_Name::instance( __FILE__ );
 } catch ( Exception $exception ) {
-	if ( WP_DEBUG && WP_DEBUG_DISPLAY ) {
+	if ( WP_DEBUG && WP_DEBUG_DISPLAY )
 		echo $exception->getMessage();
-	}
+	error_log( $exception->getMessage() );
 }
