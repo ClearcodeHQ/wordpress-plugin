@@ -5,7 +5,7 @@
 # Installation
 
 ```console
-$ composer create-project clearcode/wordpress-plugin
+$ composer create-project clearcode/wordpress-plugin <directory>
 ```
 
 # License

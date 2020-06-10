@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Copyright (C) 2018 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2020 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
@@ -21,13 +21,12 @@
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-namespace Vendor;
+namespace Vendor\Plugin_Name;
 
-use Clearcode\Framework\v3\Plugin;
+defined( 'ABSPATH' ) or exit;
 
-if ( ! defined( 'ABSPATH' ) ) exit;
-if ( ! class_exists( __NAMESPACE__ . '\Plugin_Name' ) ) {
-	class Plugin_Name extends Plugin {
+if ( ! class_exists( __NAMESPACE__ . '\Plugin' ) ) {
+	class Plugin extends \Clearcode\Framework\v5\Plugin {
 		public function __construct( $file ) {
 
 			parent::__construct( $file );

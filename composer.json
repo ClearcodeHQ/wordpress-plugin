@@ -24,7 +24,13 @@
     "preferred-install": "dist"
   },
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.2",
     "clearcode/wordpress-framework": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendor\\Plugin_Name\\": "includes"
+    },
+    "classmap": [ "includes" ]
   }
 }

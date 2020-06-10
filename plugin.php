@@ -5,7 +5,7 @@
  *
  * @package     Plugin_Name
  * @author      Your Name
- * @copyright   2017 Your Name or Company Name
+ * @copyright   2020 Your Name or Company Name
  * @license     GPL-3.0+
  *
  * @wordpress-plugin
@@ -20,7 +20,7 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
-   Copyright (C) 2018 by Your Name or Company Name <https://example.com>
+   Copyright (C) 2020 by Your Name or Company Name <https://example.com>
    and associates (see AUTHORS.txt file).
 
    This file is part of Plugin Name.
@@ -40,22 +40,15 @@
    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-namespace Vendor\Plugin_Name;
-use Vendor\Plugin_Name;
-
-use Clearcode\Framework\v3\Autoloader;
-use Exception;
-
 defined( 'ABSPATH' ) or exit;
 
 try {
 	require __DIR__ . '/vendor/autoload.php';
-	new Autoloader( [ __NAMESPACE__ => __DIR__ . '/includes' ] );
 
-	foreach ( [ 'plugin-name', 'functions' ] as $file )
+	foreach ( [ 'functions' ] as $file )
 		require_once( __DIR__ . "/includes/$file.php" );
 
-	Plugin_Name::instance( __FILE__ );
+	Vendor\Plugin_Name\Plugin::instance( __FILE__ );
 } catch ( Exception $exception ) {
 	if ( WP_DEBUG && WP_DEBUG_DISPLAY )
 		echo $exception->getMessage();

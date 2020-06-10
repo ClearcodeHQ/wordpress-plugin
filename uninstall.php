@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Copyright (C) 2018 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2020 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
@@ -21,6 +21,4 @@
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
-	exit;
-}
+defined( 'WP_UNINSTALL_PLUGIN' ) or exit;
