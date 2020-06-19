@@ -50,7 +50,6 @@ try {
 
 	Vendor\Plugin_Name\Plugin::instance( __FILE__ );
 } catch ( Exception $exception ) {
-	if ( WP_DEBUG && WP_DEBUG_DISPLAY )
-		echo $exception->getMessage();
-	error_log( $exception->getMessage() );
+	if ( WP_DEBUG && WP_DEBUG_DISPLAY ) echo $exception->getMessage();
+	if ( WP_DEBUG && WP_DEBUG_LOG ) error_log( $exception->getMessage() );
 }
