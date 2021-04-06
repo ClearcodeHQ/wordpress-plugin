@@ -25,12 +25,15 @@
   },
   "require": {
     "php": ">=7.2",
-    "clearcode/wordpress-framework": "*"
+    "clearcode/wordpress-framework": "6.1.2",
+    "clearcode/wordpress-settings": "1.0.2"
   },
   "autoload": {
     "psr-4": {
       "Vendor\\Plugin_Name\\": "includes"
     },
-    "classmap": [ "includes" ]
+    "classmap": [
+      "includes"
+    ]
   }
 }

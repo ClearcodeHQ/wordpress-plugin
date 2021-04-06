@@ -5,7 +5,7 @@
  *
  * @package     Plugin_Name
  * @author      Your Name
- * @copyright   2020 Your Name or Company Name
+ * @copyright   2021 Your Name or Company Name
  * @license     GPL-3.0+
  *
  * @wordpress-plugin
@@ -20,14 +20,14 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
-   Copyright (C) 2020 by Your Name or Company Name <https://example.com>
+   Copyright (C) 2021 by Your Name or Company Name <https://example.com>
    and associates (see AUTHORS.txt file).
 
    This file is part of Plugin Name.
 
    Plugin Name is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2 of the License, or
+   the Free Software Foundation; either version 3 of the License, or
    (at your option) any later version.
 
    Plugin Name is distributed in the hope that it will be useful,

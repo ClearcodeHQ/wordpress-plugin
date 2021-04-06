@@ -1,14 +1,14 @@
 <?php
 
 /*
-	Copyright (C) 2020 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2021 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
 
 	Plugin Name is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation; either version 2 of the License, or
+	the Free Software Foundation; either version 3 of the License, or
 	(at your option) any later version.
 
 	Plugin Name is distributed in the hope that it will be useful,
@@ -26,10 +26,10 @@ namespace Vendor\Plugin_Name;
 defined( 'ABSPATH' ) or exit;
 
 if ( ! class_exists( __NAMESPACE__ . '\Plugin' ) ) {
-	class Plugin extends \Clearcode\Framework\v5\Plugin {
+	class Plugin extends \Clearcode\Framework\v6_1_2\Plugin {
 		public function __construct( $file ) {
-
 			parent::__construct( $file );
+			new Settings();
 		}
 
 		public function activation() {}

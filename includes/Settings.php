@@ -19,6 +19,16 @@
 	You should have received a copy of the GNU General Public License
 	along with Plugin Name; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
+ */
+
+namespace Vendor\Plugin_Name;
 
 defined( 'ABSPATH' ) or exit;
+
+if ( ! class_exists( __NAMESPACE__ . '\Settings' ) ) {
+	class Settings extends \Clearcode\Settings\v1_0_2\Settings {
+		public function __construct() {
+			parent::__construct( [] );
+		}
+	}
+}
