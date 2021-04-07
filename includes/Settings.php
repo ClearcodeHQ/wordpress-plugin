@@ -26,7 +26,7 @@ namespace Vendor\Plugin_Name;
 defined( 'ABSPATH' ) or exit;
 
 if ( ! class_exists( __NAMESPACE__ . '\Settings' ) ) {
-	class Settings extends \Clearcode\Settings\v1_0_2\Settings {
+	class Settings extends \Clearcode\Settings\v1_1_0\Settings {
 		public function __construct() {
 			parent::__construct( [] );
 		}
