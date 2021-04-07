@@ -26,7 +26,7 @@
   "require": {
     "php": ">=7.2",
     "clearcode/wordpress-framework": "6.1.2",
-    "clearcode/wordpress-settings": "1.1.0"
+    "clearcode/wordpress-settings": "1.1.1"
   },
   "autoload": {
     "psr-4": {
