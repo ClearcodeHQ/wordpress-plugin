@@ -10,4 +10,4 @@ $ composer create-project clearcode/wordpress-plugin <directory>
 
 # License
 
-GPL3.0+ see LICENSE.txt and AUTHORS.txt
+GPL3.0+ see [LICENSE.txt](LICENSE.txt) and [AUTHORS.txt](AUTHORS.txt)

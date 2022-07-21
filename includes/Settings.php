@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Copyright (C) 2021 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2022 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
@@ -26,7 +26,7 @@ namespace Vendor\Plugin_Name;
 defined( 'ABSPATH' ) or exit;
 
 if ( ! class_exists( __NAMESPACE__ . '\Settings' ) ) {
-	class Settings extends \Clearcode\Settings\v1_1_1\Settings {
+	class Settings extends \Clearcode\Settings\v1_1_3\Settings {
 		public function __construct() {
 			parent::__construct( [] );
 		}

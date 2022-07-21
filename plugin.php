@@ -5,7 +5,7 @@
  *
  * @package     Plugin_Name
  * @author      Your Name
- * @copyright   2021 Your Name or Company Name
+ * @copyright   2022 Your Name or Company Name
  * @license     GPL-3.0+
  *
  * @wordpress-plugin
@@ -20,7 +20,7 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
-   Copyright (C) 2021 by Your Name or Company Name <https://example.com>
+   Copyright (C) 2022 by Your Name or Company Name <https://example.com>
    and associates (see AUTHORS.txt file).
 
    This file is part of Plugin Name.

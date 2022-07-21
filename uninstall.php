@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Copyright (C) 2021 by Your Name or Company Name <https://example.com>
+	Copyright (C) 2022 by Your Name or Company Name <https://example.com>
 	and associates (see AUTHORS.txt file).
 
 	This file is part of Plugin Name.
